@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #131F24;
+    color: #F1F5F9;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Duolingo 3D Button styles & animations */
+.btn-duo-green {
+  background-color: #58CC02;
+  border-bottom: 4px solid #46A302;
+  color: #FFFFFF;
+  font-weight: 800;
+  transition: all 0.1s ease-in-out;
+}
+.btn-duo-green:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+.btn-duo-green:active:not(:disabled) {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  margin-bottom: 3px;
+}
+
+.btn-duo-blue {
+  background-color: #1CB0F6;
+  border-bottom: 4px solid #1899D6;
+  color: #FFFFFF;
+  font-weight: 800;
+  transition: all 0.1s ease-in-out;
+}
+.btn-duo-blue:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+.btn-duo-blue:active:not(:disabled) {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  margin-bottom: 3px;
+}
+
+.btn-duo-yellow {
+  background-color: #FFC800;
+  border-bottom: 4px solid #E5A500;
+  color: #131F24;
+  font-weight: 800;
+  transition: all 0.1s ease-in-out;
+}
+.btn-duo-yellow:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+.btn-duo-yellow:active:not(:disabled) {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  margin-bottom: 3px;
+}
+
+.btn-duo-purple {
+  background-color: #CE82FF;
+  border-bottom: 4px solid #A559D9;
+  color: #FFFFFF;
+  font-weight: 800;
+  transition: all 0.1s ease-in-out;
+}
+.btn-duo-purple:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+.btn-duo-purple:active:not(:disabled) {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  margin-bottom: 3px;
+}
+
+.btn-duo-dark {
+  background-color: #202F36;
+  border-bottom: 4px solid #142025;
+  border-color: #37464F;
+  border-bottom-color: #28373E;
+  color: #E2E8F0;
+  font-weight: 700;
+  transition: all 0.1s ease-in-out;
+}
+.btn-duo-dark:hover:not(:disabled) {
+  background-color: #263842;
+}
+.btn-duo-dark:active:not(:disabled) {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  margin-bottom: 3px;
+}
+
+/* Gentle cartoon idle float */
+@keyframes bounceGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-bounce-gentle {
+  animation: bounceGentle 3s ease-in-out infinite;
+}
+
+/* Low-stimulation & Accessibility friendly styling */
+.low-stim-minimal {
+  filter: saturate(0.85);
+}
+
+.low-stim-minimal * {
+  animation-duration: 0.001s !important;
+  transition-duration: 0.05s !important;
+}
+
+/* Smooth drag styling */
+.touch-action-none {
+  touch-action: none;
+}
+

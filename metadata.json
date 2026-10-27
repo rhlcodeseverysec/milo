@@ -1,0 +1,6 @@
+{
+  "name": "Milo",
+  "description": "Calm, adaptive learning quests for children (age 4+) with cartoon Beagle buddy Milo, featuring 3 story lessons, hydration sidequest breaks, flashcard memory games, and Guardian dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
